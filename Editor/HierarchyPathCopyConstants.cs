@@ -11,10 +11,6 @@ namespace AbyssMoth
     {
         public const string CopyHierarchyMenu = "AbyssMoth/Copy Selection/Hierarchy Path %&c";
         public const string CopyLocatorMenu = "AbyssMoth/Copy Selection/Object Locator %#&c";
-        public const string CopyHierarchyGameObjectMenu = "GameObject/AbyssMoth/Copy Hierarchy Path";
-        public const string CopyLocatorGameObjectMenu = "GameObject/AbyssMoth/Copy Object Locator";
-        public const string CopyHierarchyContextMenu = "CONTEXT/Transform/Copy Hierarchy Path";
-        public const string CopyLocatorContextMenu = "CONTEXT/Transform/Copy Object Locator";
         public const string HierarchyCopiedNotification = "Hierarchy path copied";
         public const string LocatorCopiedNotification = "Object locator copied";
         public const string HierarchyHotkeyDescription = "Cmd+Option+C on macOS, Ctrl+Alt+C on Windows";

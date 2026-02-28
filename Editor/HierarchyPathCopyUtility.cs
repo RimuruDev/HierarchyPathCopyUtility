@@ -28,45 +28,9 @@ namespace AbyssMoth
         private static bool ValidateCopySelectedObjectLocator() =>
             HasSelectedTransforms();
 
-        [MenuItem(HierarchyPathCopyConstants.CopyHierarchyGameObjectMenu, false, 49)]
-        private static void CopyGameObjectHierarchyPath() =>
-            CopySelection(copyLocator: false);
-
-        [MenuItem(HierarchyPathCopyConstants.CopyHierarchyGameObjectMenu, true)]
-        private static bool ValidateCopyGameObjectHierarchyPath() =>
-            HasSelectedTransforms();
-
-        [MenuItem(HierarchyPathCopyConstants.CopyLocatorGameObjectMenu, false, 50)]
-        private static void CopyGameObjectLocator() =>
-            CopySelection(copyLocator: true);
-
-        [MenuItem(HierarchyPathCopyConstants.CopyLocatorGameObjectMenu, true)]
-        private static bool ValidateCopyGameObjectLocator() =>
-            HasSelectedTransforms();
-
-        [MenuItem(HierarchyPathCopyConstants.CopyHierarchyContextMenu)]
-        private static void CopyContextHierarchyPath(MenuCommand command) =>
-            CopySingle(command, copyLocator: false);
-
-        [MenuItem(HierarchyPathCopyConstants.CopyLocatorContextMenu)]
-        private static void CopyContextLocator(MenuCommand command) =>
-            CopySingle(command, copyLocator: true);
-
         private static void CopySelection(bool copyLocator)
         {
             var value = HierarchyPathCopyService.BuildSelectionText(Selection.transforms, copyLocator);
-            PublishToClipboard(value, copyLocator);
-        }
-
-        private static void CopySingle(MenuCommand command, bool copyLocator)
-        {
-            if (command?.context is not Transform transform)
-                return;
-
-            var value = copyLocator
-                ? HierarchyPathCopyService.BuildObjectLocator(transform)
-                : HierarchyPathCopyService.BuildHierarchyPath(transform);
-
             PublishToClipboard(value, copyLocator);
         }
 

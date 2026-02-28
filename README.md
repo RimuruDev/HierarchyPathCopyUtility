@@ -30,7 +30,6 @@ If the release contains the package source instead of a `.unitypackage`, copy th
 1. Select one or more objects in the Hierarchy.
 2. Use `AbyssMoth/Copy Selection/Hierarchy Path` to copy a plain hierarchy path.
 3. Use `AbyssMoth/Copy Selection/Object Locator` to copy a path with scene or prefab context.
-4. The same commands are also available in `GameObject/AbyssMoth/...` and the `Transform` context menu.
 
 Hotkeys:
 
