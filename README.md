@@ -33,7 +33,7 @@ If the release contains the package source instead of a `.unitypackage`, copy th
 
 Hotkeys:
 
-- `Hierarchy Path`: `Cmd+Option+C` on macOS, `Ctrl+Alt+C` on Windows
+- `Hierarchy Path`: `Cmd+Option+V` on macOS, `Ctrl+Alt+V` on Windows
 - `Object Locator`: `Cmd+Shift+Option+C` on macOS, `Ctrl+Shift+Alt+C` on Windows
 
 Hierarchy Path copies values like `Root/Child/Target`.
