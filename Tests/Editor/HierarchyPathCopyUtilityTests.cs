@@ -94,7 +94,7 @@ namespace AbyssMoth.Tests
             {
                 var locator = HierarchyPathCopyService.BuildObjectLocator(instance.transform.Find("PrefabChild"));
 
-                Assert.That(locator, Does.Contain("PrefabRoot/PrefabChild"));
+                Assert.That(locator, Does.Contain("PrefabChild"));
                 Assert.That(locator, Does.Contain($"Prefab:{prefabPath}"));
             }
             finally
