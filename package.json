@@ -1,0 +1,22 @@
+{
+  "name": "com.abyssmoth.hierarchy-path-copy-utility",
+  "version": "1.0.0",
+  "displayName": "Hierarchy Path Copy Utility",
+  "description": "Editor utility for copying hierarchy paths and object locator strings from Unity selections.",
+  "unity": "6000.3",
+  "unityRelease": "6f1",
+  "license": "MIT",
+  "keywords": [
+    "rimurudev",
+    "rimuru-dev",
+    "abyssmoth",
+    "hierarchy",
+    "path",
+    "utility"
+  ],
+  "author": {
+    "name": "RimuruDev",
+    "url": "https://github.com/RimuruDev"
+  },
+  "type": "tool"
+}
