@@ -32,6 +32,11 @@ If the release contains the package source instead of a `.unitypackage`, copy th
 3. Use `AbyssMoth/Copy Selection/Object Locator` to copy a path with scene or prefab context.
 4. The same commands are also available in `GameObject/AbyssMoth/...` and the `Transform` context menu.
 
+Hotkeys:
+
+- `Hierarchy Path`: `Cmd+Option+C` on macOS, `Ctrl+Alt+C` on Windows
+- `Object Locator`: `Cmd+Shift+Option+C` on macOS, `Ctrl+Shift+Alt+C` on Windows
+
 Hierarchy Path copies values like `Root/Child/Target`.
 
 Object Locator copies values like `Scene:SampleScene :: Root/Child/Target` or `Scene:SampleScene :: Root/Child/Target :: Prefab:Assets/Example.prefab`.
